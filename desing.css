@@ -1,0 +1,205 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+ }
+   *, *:before, *:after {
+     -webkit-box-sizing: inherit;
+     box-sizing: border-box;
+}
+
+:root{
+    /*primary*/
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /*neutral*/
+    --transparent-white-parrafo: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Roboto:ital@1&display=swap');
+
+/*.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    height: 50vh;   
+}
+
+.sedans{
+    display: flex;
+    flex-direction: column;
+    max-width: 333px;
+    padding: 1.75rem;
+    height: 100%;
+    background-color: var(--bright-orange);
+    flex: 0 1 auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suvs{
+    display: flex;
+    flex-direction: column;
+    max-width: 333px;
+    padding: 1.75rem;
+    height: 100%;
+    background-color: var(--dark-cyan);
+    flex: 0 1 auto;
+}
+
+.luxury{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 333px;
+    padding: 1.75rem;
+    height: 100%;
+    background-color: var(--very-dark-cyan);
+    flex: 0 1 auto;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+h1{
+    font-family: 'Big Shoulders Display';
+}
+
+p{
+    font-family: 'Lexend Deca' ;
+}
+
+button{
+    width: 100%;
+    border: 0;
+
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Big Shoulders Display";
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+} */
+
+.flex{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+
+}
+
+.cards{
+    height: 50vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+} 
+
+.sedans{
+    display: flex;
+    flex-direction: column;
+    max-width: 333px;
+    padding: 1.75rem;
+    height: 100%;
+    background-color: var(--bright-orange);
+    flex: 0 1 auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suvs{
+    display: flex;
+    flex-direction: column;
+    max-width: 333px;
+    padding: 1.75rem;
+    height: 100%;
+    background-color: var(--dark-cyan);
+    flex: 0 1 auto;
+}
+
+.luxury{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 333px;
+    padding: 1.75rem;
+    height: 100%;
+    background-color: var(--very-dark-cyan);
+    flex: 0 1 auto;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+h1{
+    font-family: 'Big Shoulders Display';
+    color: white;
+}
+
+p{
+    font-family: 'Lexend Deca' ;
+    color: white;
+    line-height: 1.5rem;
+}
+
+button{
+    margin-top: 50%; 
+    width: 75%;
+    border: 0;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    font-family: "Big Shoulders Display";
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .sedans{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0%;
+    }
+    
+    .luxury{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0%;   
+    }
+    
+}
+
